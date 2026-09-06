@@ -97,7 +97,9 @@ def archive_file(file):
     shutil.move(file, archive_path)
     
 def Update_master(data):
+
     master  = "Final Reports/master_sales.xlsx"
+    
     try:
         finaldf = pd.concat(data, ignore_index=True)
         
@@ -123,6 +125,8 @@ def Update_master(data):
     return finaldf     
 
 def Generate_charts(finaldf):
+
+    os.makedirs("Final Reports/Chart_folder", exist_ok=True)
     
     # monthly sales
     finaldf["month"] = finaldf["order_date"].dt.month
@@ -335,4 +339,5 @@ Generate_kpis(finaldf)
     
     
     
+
 

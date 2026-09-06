@@ -5,13 +5,13 @@
 this project shows complete sales reporting process.
 
 - Reads multiple excel files
-- Clean messy data
+- Cleans messy data
 - Remove duplicates
-- handling missing values
+- handles missing values
 - Validate quantity and prices
 - Generate KPIs
 - Create charts
-- Saves cleaned combined report
+- Generates cleaned files and a consolidated master report
 
 
 ## Technologies Used
@@ -19,7 +19,7 @@ this project shows complete sales reporting process.
 - python
 - Pandas
 - Numpy
-- Openyxl
+- OpenPyXl
 - Matplotlib
 - OS
 - Shutil
@@ -35,30 +35,102 @@ this project shows complete sales reporting process.
    ```
 3. Run the project:
    ```bash
-  Sales_automation.py
+  python Sales_automation.py
    ```
 
 ## Project Structure
 
-```text
+```
 Sales-Automation/
-├── Sales_Automation.py
-├── Sales_Automation.ipynb
+│
+├── sales_Automation.ipynb
+├── Sales_automation.py
 ├── README.md
 ├── requirements.txt
+├── LICENSE
+├── .gitignore
 ├── Data/
-│   ├── Raw Files/
-│   ├── Cleaned Files/
+│   ├── Raw files/
+│   ├── Cleaned files/
 │   └── Archive/
+│
 └── Final Reports/
-    ├── Chart_Folder/
-    │   ├── Monthly_sales.png
-    │   ├── Order_status.png
-    │   └── Regional_sales.png
-    ├── Master_Sales.xlsx
+    ├── Chart_folder/
+    │   ├── monthly_sales.png
+    │   ├── Regional_sales.png
+    │   ├── Payment_modes.png
+    │   ├── age_group_max_purchased.png
+    │   ├── Max_sales_by_Product.png
+    │   ├── Maximum_discount.png
+    │   ├── Order_stats.png
+    │   └── total_sales_by_gender.png
+    │
+    ├── master_sales.xlsx
     └── Sales_Report.xlsx
 ```
 
+
+## Output
+
+The automation generates:
+
+- Cleaned Excel files
+- Archived processed input files
+- A consolidated master_sales.xlsx file
+- A Sales_Report.xlsx containing key sales KPIs
+- Sales charts for different business metrics
+
+
+## Generated KPIs
+
+- Total Sales
+- Total Orders
+- Average Discount
+- Average Order Value
+- Highest Sale
+
+## Generated Charts
+- Monthly Sales
+- Regional Sales
+- Payment Methods
+- Age Group vs Most Purchased Product
+- Maximum Sales by Product
+- Maximum Discount by Product
+- Order Status
+- Total Sales by Gender
+
+
+## Automation Workflow
+```
+Monthly Excel Files
+       ↓
+Data/Raw files/
+       ↓
+Read Excel Files
+       ↓
+Data Cleaning
+       ↓
+Validation & Transformation
+       ↓
+Data/Cleaned files/
+       ↓
+Archive Original Files
+       ↓
+Combine Sales Data
+       ↓
+master_sales.xlsx
+       ↓
+KPIs + Charts
+       ↓
+Final Reports
+```
+
+## Future Improvements
+
+- logging
+- error handling
+- configuration file
+- database loading
 
 ## Author
 

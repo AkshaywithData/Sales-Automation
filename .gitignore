@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated cleaned data
+Data/Cleaned files/
+
+# Archived files
+Data/Archive/
+
+# Generated reports
+Final Reports/master_sales.xlsx
+Final Reports/Sales_Report.xlsx
+
+# Generated charts
+Final Reports/Chart_folder/
+
+# Temporary Excel files
+~$*
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
