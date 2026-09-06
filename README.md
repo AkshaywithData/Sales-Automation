@@ -30,13 +30,11 @@ this project shows complete sales reporting process.
 
 1. Place Excel files in the `Data/Raw Files` folder.
 2. Install the required libraries:
-   ```bash
    pip install pandas numpy openpyxl matplotlib
-   ```
+
 3. Run the project:
-   ```bash
   python Sales_automation.py
-   ```
+
 
 ## Project Structure
 
